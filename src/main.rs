@@ -1,3 +1,5 @@
+mod module_hello;
+
 fn func_ex_div_some(x: i32, y: i32) -> Option<i32> {
     let ans = if y == 0 {
         None
@@ -21,4 +23,7 @@ fn main() {
     println!("Hello, world!");
     println!("{:?}",func_ex_div_some(20, 10));
     println!("{}", add_i32(22, 11));
+    module_hello:: print_hello();
 }
+
+
